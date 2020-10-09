@@ -3,6 +3,19 @@ import { StyleSheet, Text, View,
       TextInput, Switch, Image, KeyboardAvoidingView } from 'react-native';
 
 /**
+ * Utility function that will be useful for Extra Credit
+ * You'll need to do something similar for lower case letters and digits
+ * @param {string} char The character to test
+ * @returns {string} true if the character is an uppercase letter, else false
+ */
+function isUpper(char) {
+  let codeA = "A".charCodeAt(0);
+  let codeZ = "Z".charCodeAt(0);
+  let codeChar = char.charCodeAt(0);
+  return (codeChar >= codeA && codeChar <= codeZ);
+}
+
+/**
  * @param {string} text The string to reverse
  * @returns {string} The string, reversed
  */
@@ -22,8 +35,6 @@ export default class classApp extends React.Component {
       resultStyle: styles.resultTextLight
     }
   }
-  
-
 
   handleChangeText = (text) => {
 
