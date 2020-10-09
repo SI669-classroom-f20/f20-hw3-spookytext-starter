@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View,
-      TextInput, Switch, Image } from 'react-native';
+      TextInput, Switch, Image, KeyboardAvoidingView } from 'react-native';
 
 /**
  * @param {string} text The string to reverse
@@ -39,7 +39,9 @@ export default class classApp extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <KeyboardAvoidingView
+        behavior={"padding"}
+        style={styles.container}>
         <Image source={require('./spookytext.png')}
           style={styles.logoImage}/>
         <View style={styles.inputArea}>
@@ -72,7 +74,7 @@ export default class classApp extends React.Component {
           <Text style={styles.resultLabel}>Result: </Text>
           <Text style={this.state.resultStyle}>{this.state.resultText}</Text>
         </View>
-      </View>
+      </KeyboardAvoidingView>
     );
   }
 }
@@ -83,9 +85,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'flex-start',
+    paddingTop: 30
   },
   logoImage: {
-    flex: 0.25,
+    flex: 0.2,
     alignItems: 'center',
     justifyContent: 'flex-end',
     width: '80%',
@@ -93,9 +96,9 @@ const styles = StyleSheet.create({
     resizeMode: 'contain'
   },
   inputArea: {
-    flex: 0.15,
+    flex: 0.1,
     alignItems: 'center',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
   },
   inputRow: {
     flexDirection: 'row',
@@ -109,15 +112,16 @@ const styles = StyleSheet.create({
   },
   inputBox: {
     flex: 0.6,
+    height: 40,
     borderWidth: 1,
     borderColor: 'black',
     fontSize: 24,
     padding: 5,
-
   },
   switchArea: {
+    flex: 0.1,
     width: '100%',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     alignItems: 'center',
     padding: 20
   },
@@ -128,9 +132,10 @@ const styles = StyleSheet.create({
     width: '100%'
   },
   resultArea: {
+    flex: 0.1,
     flexDirection: 'row',
     width: '100%',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
   },
