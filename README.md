@@ -14,6 +14,7 @@ Fill in the missing code to complete an app that accepts text input from the use
 1. Accept the GitHub Classroom invitation.
 2. Clone this repo to your local machine.
 3. `cd` into the directory that was created when you cloned the repo (it should be called `hw3-spookytext-<your-github-id>`).
+4. Run `yarn install` to install all dependencies.
 4. Implement `handleChangeText()`, `handleReverseText()`, and `handleReverseColors()`. You shouldn't need to change anything else, but you can if you want.
 5. Push your final changes to GitHub before the deadline.
 6. Create a screencast video and submit the link to Canvas before the deadline.
