@@ -38,7 +38,7 @@ Fill in the missing code to complete an app that accepts text input from the use
 |   | **Total** | **120**
 
 ## Extra Credit
-For extra credit you can implement a simple password validator that operates as shown in the [demo video](https://youtu.be/hztb3RzcziI). 
+For extra credit you can implement a simple password validator that operates as shown in the [demo video](https://youtu.be/2RKKPLiPVMw). 
 
 ## Notes
 * You may notice that the starter app uses a [KeyboardAvoidingView](https://reactnative.dev/docs/keyboardavoidingview). It does what the name 
